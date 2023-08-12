@@ -27,8 +27,10 @@ object SessionManager {
 
 	fun cancleAll(player: Player) {
 		sessions.forEach { (_, session) ->
-			TpaFormat.msg(session.player, "${player.name}님의 요청이 취소되었습니다")
-			session.remove(player)
+			if(session.queue.contains(player)){
+				session.remove(player)
+				TpaFormat.msg(session.player, "${player.name}님의 요청이 취소되었습니다")
+			}
 		}
 	}
 }
