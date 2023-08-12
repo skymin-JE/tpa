@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="tpa">
+    <output-path>$USER_HOME$/Desktop/paper20/plugins</output-path>
+    <root id="archive" name="tpa.jar">
+      <element id="module-output" name="tpa.main" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources" />
+    </root>
+  </artifact>
+</component>
